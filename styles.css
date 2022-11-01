@@ -12,8 +12,9 @@ body {
     /* Body properties */
     border: 3px solid rgb(26, 24, 24);
     border-radius: 20px;
-    width: 30vw;
-    height: 50vw;
+    max-width: 30vw;
+    max-height: 50vw;
+    margin: 5vw;
 
     /* Content inside calculator */
     display: flex;
@@ -27,11 +28,13 @@ body {
     height: 5vw;
     border: 1px solid gray;
     background-color: rgb(188, 248, 248);
+    text-align: right;
+    font-size: 5vw;
+    font-family: 'calculator';
 }
 
 #buttons {
     width: 90%;
-    border: 1px solid grey;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -41,6 +44,8 @@ body {
     width: 5.5vw;
     height: 5.5vw;
     margin-bottom: 5%;
+    font-size: 2vh;
+    border-radius: 10px;;
 }
 
 #clear {
@@ -50,4 +55,13 @@ body {
 
 #zero {
     width: 12.7vw;
+}
+
+.number {
+    background-color: rgb(20, 21, 36);
+    color: whitesmoke;
+}
+
+.operator #result{
+    background-color: rgb(231, 227, 227);
 }
